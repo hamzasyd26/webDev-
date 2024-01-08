@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .A{
+            color: blue;
+        }
+        .B{
+            color: red;
+        }
+        /* this is an example of attribute selector */
+        [data-x=a]{
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <!-- priority of selector:
+    inline>Id>class,attributr,pseudo>element>universal -->
+    <div>
+        <h1 style="color: maroon;" class="A" class="B" data-x="a">css selectors</h1>
+    </div>
+</body>
+</html>

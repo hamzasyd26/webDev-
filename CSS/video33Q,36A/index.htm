@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --fcolor: red;
+            --bcolor: pink;
+
+            --f1color: blue;
+            --b1color: yellow;
+
+            --f2color: white;
+            --b2color: black;
+        }
+        body{
+            background-color: var(--bcolor);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            color: var(--fcolor);
+            background-color: var(--b1color);
+        }
+
+        ul {
+            display: flex;
+
+        }
+
+        ul li {
+            margin: 8px;
+            list-style-type: none;
+            padding: 2px;
+        }
+        ul li a{
+            color: var(--fcolor);
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">home</a></li>
+                <li><a href="/">about</a></li>
+                <li><a href="/">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>

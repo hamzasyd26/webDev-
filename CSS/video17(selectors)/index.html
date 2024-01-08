@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selector</title>
+    <style>
+        div{
+            background-color: bisque;
+        }
+        /* class selector */
+        .red{
+            color: red;
+        }
+        /* id selector */
+        #mergenta{
+            color: magenta;
+        }
+        /* child selector */
+        div>p{
+            color: darkgreen;
+            background-color: chocolate;
+        }
+        /* decendent selector */
+        div p{
+            background-color: chocolate;
+        }
+        /* universal selector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* pseudo selector */
+        a:visited{
+            color: darkred;
+        }
+        a:link{
+            color: darkgreen;
+        }
+        a:active{
+            background-color: purple;
+        }
+        a:hover{
+            background-color: blueviolet;
+        }
+        p:first-child{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="one">
+        <p>i am first child</p>
+        <p>i am second child</p>
+    </div>
+    <div class="red">
+        i am a div
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, adipisci nesciunt! Enim!</p>
+    </div>
+    <div id="mergenta">
+        <span>
+            <p>i am another div</p>
+        </span>
+        <a href="https://www.google.com">go to google</a>
+        <a href="https://www.facebook.com">go to afcebook</a>
+    </div>
+</body>
+</html>
