@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container red bg-green">
+        <div class="box" style="display: flex;">HEY! I AM BOX</div>
+        <div class="box">HEY! I AM BOX</div>
+    </div>
+    <script>
+        let div = document.createElement("div");
+        div.innerHTML = "THIS IS CREATED <b>BY HAMZA</b>";
+        div.setAttribute("class","created");
+        document.querySelector(".container").append(div);
+        // document.querySelector(".container").prepend(div);
+        // document.querySelector(".container").before(div);
+        // document.querySelector(".container").after(div);
+        // document.querySelector(".container").replaceWith(div);
+
+        let cont = document.querySelector(".container");
+        cont.insertAdjacentHTML("beforebegin","THE PAIN OF REGRET OR <b>THE PAIN OF DICEPLINE</b>")
+    </script>
+</body>
+</html>
