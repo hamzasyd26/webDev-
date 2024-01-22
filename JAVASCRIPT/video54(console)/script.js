@@ -1,5 +1,6 @@
 alert("HELLO WORLD")
 
+
 console.log("this code is running...")
 console.log("thiscode is also running")
 console.log("this code is running like a wow")
@@ -15,3 +16,8 @@ else{
     console.log("computer is not blasting")
 }
 console.log("your number is" +a)
+
+// let lst = [1,2,3,4,5]
+// let y = lst.splice(1,3,22,23)
+// console.log(y)
+// console.log(lst)
