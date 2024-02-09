@@ -8,6 +8,7 @@ async function sleep(){
     })
 }    
 
+// IIFE
 (async function main(){
     let a= await sleep()
     console.log(a)
